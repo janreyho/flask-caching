@@ -6,7 +6,7 @@ from flask_caching import Cache
 
 
 app = Flask(__name__)
-app.config.from_pyfile('hello.cfg')
+app.config.from_object('hello_settings')
 cache = Cache(app)
 
 
